@@ -11,3 +11,42 @@ examples:
 | https://m.tb.cn/h.eKcAtDb | https://uland.taobao.com/coupon/edetail?e=cl3sfngxehQGQASttHIRqRVi5uxwmMrNzt8H5SH4UobbLaGB9uZG%2Bt5chu8yXGlj5CLqzfwBbnNCeupaGVuloe99xGyxAr9z819cieM8MLYDfeBzYGsrw2BMwzTKkPZRZJ2GXWoph3fwDr1HHMjNrGCBLf0Ce8vJQdUCsKS61xH3LTDo28QWQkbYLu1k1GIxVmu1M4uBeRyMOmm%2BVf6hv4G0cDpPxNmdUE9%2Bilvste%2BYX1J7GOXg59vxwBPd6WBN&traceId=0b5105c515714605134898002e4587&union_lens=lensId%3AAPP%401571460513%400b0b9125_0c8c_16de2587f03_1cdc%4001&traffic_flag=lm&scm=20140618.1.01010001.s101c6&spm=a21wq.8999005.531642121925.1&un=f5e9f099dd4a2cb80a62cb2c046d31df&share_crt_v=1&ut_sk=1.utdid_null_1571460513606.TaoPassword-Outside.lianmeng-app&sp_tk=77+lZWdwNllxY3NzT0vvv6U=&cpp=1&shareurl=true&short_name=h.eKcAtDb | https://item.taobao.com/item.htm?id=531642121925 | O | O |
 | https://m.tb.cn/h.ep6FtMT | https://uland.taobao.com/coupon/edetail?e=kdrGV%2FV3P1QE%2BdAb1JoOOj4J%2B85FODMkPySc6kJusjLl43M3mIB1t6pG%2FgDQeExds0hZBYhyflvhXLQMGSsylLfDCpL7Je5d819cieM8MLYDfeBzYGsrw2BMwzTKkPZRZJ2GXWoph3fwDr1HHMjNrGCBLf0Ce8vJQdUCsKS61xH3LTDo28QWQkbYLu1k1GIxVmu1M4uBeRyMOmm%2BVf6hv%2F5OixsWaWIHNDF3T%2FuzxLLz7VRDRT4Ja5DNtBEEL6GujLCaoKysnwc3cAzCHgkepw%3D%3D&traceId=0b51061b15714605882338440eb713&union_lens=lensId%3AAPP%401571460588%400b151c5a_0caf_16de259a2f4_1631%4001&traffic_flag=lm&scm=20140618.1.01010001.s101c6&spm=a21wq.8999005.602362101964.2&un=f5e9f099dd4a2cb80a62cb2c046d31df&share_crt_v=1&ut_sk=1.utdid_null_1571460588348.TaoPassword-Outside.lianmeng-app&sp_tk=77+lSHFJZFlxY3RnQTLvv6U=&cpp=1&shareurl=true&short_name=h.ep6FtMT | https://detail.tmall.com/item.htm?id=602362101964 | O | O |
 
+## What's this?
+
+A demo for getting the real url behind a taobao short url (like as "https://m.tb.cn/xxx").
+
+## Use case
+
+Anywhere you need it.
+
+## Usage
+
+```
+Usage: parse-tb-short-url [options...] <url>
+
+Options:
+  -h	this help
+  -ua string
+    	set user-agent (default "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 ChannelId(3) Nebula PSDType(1) AlipayDefined(nt:WIFI,ws:375|647|2.0) AliApp(AP/10.0.1.123008) AlipayClient/10.0.1.123008 Alipay Language/zh-Hans")
+```
+
+```bash
+# based on the default ua
+$ parse-tb-short-url https://m.tb.cn/h.eKcH5Rd https://m.tb.cn/h.eKcxNzl https://m.tb.cn/h.eprLxOs https://m.tb.cn/h.ep6txvS https://m.tb.cn/h.eKcAtDb https://m.tb.cn/h.ep6FtMT
+a.m 568798650647 https://h5.m.taobao.com/awp/core/detail.htm?id=568798650647
+a.m 596905505758 https://h5.m.taobao.com/awp/core/detail.htm?id=596905505758
+s.click 555364628488 https://h5.m.taobao.com/awp/core/detail.htm?id=555364628488
+s.click 603891285329 https://h5.m.taobao.com/awp/core/detail.htm?id=603891285329
+uland 531642121925 https://h5.m.taobao.com/awp/core/detail.htm?id=531642121925
+uland 602362101964 https://h5.m.taobao.com/awp/core/detail.htm?id=602362101964
+```
+
+## Download
+
+Binary files are here for Linux, Mac OS X and Windows:
+
+<https://github.com/zhanglianxin/parse-tb-short-url/releases>
+
+## Thanks
+
+Thanks all you guys.
