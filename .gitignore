@@ -18,7 +18,7 @@
 tmp
 
 # Binary
-parse-tb-short-url
+parse-tb-short-url*
 
 // Dep
 /vendor
