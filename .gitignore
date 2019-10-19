@@ -10,3 +10,15 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+
+# GoLand
+.idea
+
+# Fresh
+tmp
+
+# Binary
+parse-tb-short-url
+
+// Dep
+/vendor
